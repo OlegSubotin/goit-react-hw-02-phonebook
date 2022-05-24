@@ -4,7 +4,7 @@ import initialContacts from './Contacts.json';
 import Section from "components/Section";
 import Form from "components/Form";
 import Filter from "components/Filter";
-import Contacts from "components/Contacts";
+import ContactsList from "components/ContactsList";
 
 class App extends Component{
   state = {
@@ -61,7 +61,7 @@ class App extends Component{
             value={filter}
             onChange={changeFilter}
           />
-          <Contacts
+          <ContactsList
             contacts={visibleContacts}
             onContactDelete={onContactDelete}
           />     
